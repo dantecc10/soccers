@@ -1,5 +1,11 @@
 <?php
-$búsqueda = $_GET['búsqueda'];
+if (isset($búsqueda)) {
+    $búsqueda = $_GET['búsqueda'];
+    echo "Establecida";
+} else {
+    $búsqueda = $_GET['búsqueda'];
+    echo "No establecida";
+}
 include "Conexión.php";
 include "ConfiguraciónConstantesCíclicas.php";
 for ($i = 1; $i < count($campos); $i++) {
