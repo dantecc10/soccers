@@ -11,10 +11,10 @@ echo $apSupCont1; //Súpercontenedor
 
 while ($columna = mysqli_fetch_array($resultado)) {
     echo $apCont1; //Contenedor
-    for ($i = 1; $i < count($campos); $i++) {
+    for ($i = 1; $i < count($camposSQL); $i++) {
         switch ($camposSQL[$i]) {
             case $camposSQL[1]:
-                echo ($apSubCont1_1 . $columna[$camposSQL[$i - 1]] . $ciSubCont1_1);
+                echo ($apSubCont1_1 . $columna['id_producto'] . $ciSubCont1_1);
                 break;
             case $camposSQL[2]:
                 echo ($columna[$camposSQL[$i - 1]] . $apSubCont1_2);
