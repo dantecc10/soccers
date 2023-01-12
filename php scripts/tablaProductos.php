@@ -23,7 +23,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
                 echo ($columna[$camposSQL[$i]] . $ciSubCont1_2);
                 break;
             case $camposSQL[4]:
-                echo ($columna[$camposSQL[$i]] .  $apSubCont1_3);
+                echo ($columna[$camposSQL[$i]] .  $ciSubCont1_3);
                 break;
                 #case $camposSQL[5]:
                 #    echo ($apSubCont1_5 . $columna[$camposSQL[$i]] . $ciSubCont1_5);
