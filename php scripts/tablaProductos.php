@@ -13,16 +13,16 @@ while ($columna = mysqli_fetch_array($resultado)) {
     echo $apCont1; //Contenedor
     for ($i = 1; $i < count($campos); $i++) {
         switch ($camposSQL[$i]) {
-            case $camposSQL[1]:
+            case $camposSQL[0]:
                 echo ($apSubCont1_1 . $columna[$camposSQL[$i]] . $ciSubCont1_1);
                 break;
-            case $camposSQL[2]:
+            case $camposSQL[1]:
                 echo ($columna[$camposSQL[$i]] . $apSubCont1_2);
                 break;
-            case $camposSQL[3]:
+            case $camposSQL[2]:
                 echo ($columna[$camposSQL[$i]] . $ciSubCont1_2);
                 break;
-            case $camposSQL[4]:
+            case $camposSQL[3]:
                 echo ($columna[$camposSQL[$i]] .  $ciSubCont1_3);
                 break;
                 #case $camposSQL[5]:
