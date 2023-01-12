@@ -17,23 +17,23 @@ while ($columna = mysqli_fetch_array($resultado)) {
                 echo ($apSubCont1_1 . $columna[$camposSQL[$i]] . $ciSubCont1_1);
                 break;
             case $camposSQL[2]:
-                echo ($apSubCont1_2 . $columna[$camposSQL[$i]] . $ciSubCont1_2);
+                echo ($columna[$camposSQL[$i]] . $apSubCont1_2);
                 break;
             case $camposSQL[3]:
-                echo ($apSubCont1_3 . $columna[$camposSQL[$i]] . $ciSubCont1_3);
+                echo ($columna[$camposSQL[$i]] . $ciSubCont1_2);
                 break;
             case $camposSQL[4]:
-                echo ($apSubCont1_4 . $columna[$camposSQL[$i]] . $ciSubCont1_4);
+                echo ($columna[$camposSQL[$i]] .  $apSubCont1_3);
                 break;
-            case $camposSQL[5]:
-                echo ($apSubCont1_5 . $columna[$camposSQL[$i]] . $ciSubCont1_5);
-                break;
-            case $camposSQL[6]:
-                echo ($apSubCont1_5 . $columna[$camposSQL[$i]] . $ciSubCont1_5);
-                break;
-            case $camposSQL[7]:
-                echo ($apSubCont1_5 . $columna[$camposSQL[$i]] . $ciSubCont1_5);
-                break;
+                #case $camposSQL[5]:
+                #    echo ($apSubCont1_5 . $columna[$camposSQL[$i]] . $ciSubCont1_5);
+                #    break;
+                #case $camposSQL[6]:
+                #    echo ($apSubCont1_5 . $columna[$camposSQL[$i]] . $ciSubCont1_5);
+                #    break;
+                #case $camposSQL[7]:
+                #    echo ($apSubCont1_5 . $columna[$camposSQL[$i]] . $ciSubCont1_5);
+                #    break;
 
             default:
                 echo "<td>" . $columna[$camposSQL[$i]] . "</td>";

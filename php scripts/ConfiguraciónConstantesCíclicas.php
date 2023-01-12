@@ -14,4 +14,4 @@ $ciSubCont1_1 = (".png'></a></div></div><div class='row'><div class='col-8 col-l
 $apSubCont1_2 = ("</a></h2></div></div><div class='row'><div class='col-12'><p class='product-description'>");
 $ciSubCont1_2 = ("</p><div class='row'><div class='col-6'><button class='btn btn-light' type='button'>Comprar ahora</button></div><div class='col-6'><p class='product-price'>$");
 
-$ciSubCont1_2_1 = ("</p></div></div></div></div>");
+$ciSubCont1_3 = ("</p></div></div></div></div>");
