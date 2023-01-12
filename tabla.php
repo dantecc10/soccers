@@ -4,7 +4,7 @@ include "Conexión.php";
 $consulta = "SELECT * FROM `productos`";
 $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
 
-$contador = 0;
+$contador = 0; //NuV
 
 $campos = ['id', 'nombre', 'descripción', 'precio', 'existencia', 'color', 'activo'];
 $tablaSQL = "productos";
