@@ -36,7 +36,7 @@ while ($columna = mysqli_fetch_array($resultado)) {
                 #    break;
 
             default:
-                echo "<td>" . $columna[$camposSQL[$i]] . "</td>";
+                # echo "<td>" . $columna[$camposSQL[$i]] . "</td>";
                 break;
         }
     }
