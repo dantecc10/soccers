@@ -3,7 +3,7 @@ function buscarProductos() {
     console.log("Se busca: '" + búsqueda + "'");
     if (búsqueda != "" || búsqueda != null) {
         var urlCompuesta, urlVariables = "", uriPHP, filtro = true;
-        uriPHP = "php scripts/tablaProductos.php";
+        uriPHP = "php scripts/filtrarProductos.php";
         urlVariables = ("?búsqueda=" + búsqueda + "&filtro=" + filtro);
         urlCompuesta = (uriPHP + urlVariables);
 
