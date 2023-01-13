@@ -1,12 +1,22 @@
 <?php
 session_start();
+$búsqueda = $_GET['búsqueda'];
 include "Conexión.php";
 include "ConfiguraciónConstantesCíclicas.php";
 for ($i = 1; $i < count($campos); $i++) {
     $camposSQL[$i] = ($campos[$i] . "_" . substr_replace($tablaSQL, "", -1));
 }
+$where = "WHERE (";
+$cuenta = count($camposSQL);
+$where .= "id_producto LIKE '%" . $búsqueda . "%' OR ";
+for ($i = 1; $i < $cuenta; $i++) {
+    $where .= $camposSQL[$i] . " LIKE '%" . $búsqueda . "%' OR ";
+}
+$where = substr_replace($where, "", -3);
+$where .= ")";
 
-$consulta = ("SELECT * FROM `" . $tablaSQL  . "`");
+$consulta = ("SELECT * FROM `" . $tablaSQL  . "` " . $where);
+#echo $consulta;
 $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
 
 echo $apSupCont1; //Súpercontenedor
