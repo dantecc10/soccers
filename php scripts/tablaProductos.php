@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include "Conexión.php";
 include "ConfiguraciónConstantesCíclicas.php";
 for ($i = 1; $i < count($campos); $i++) {

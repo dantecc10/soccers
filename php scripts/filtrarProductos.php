@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 $búsqueda = $_GET['búsqueda'];
 include "Conexión.php";
 include "ConfiguraciónConstantesCíclicas.php";
