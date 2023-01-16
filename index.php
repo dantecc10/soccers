@@ -1,5 +1,5 @@
 <?php
-header("Location: /adeudo/index.html");
+#header("Location: /adeudo/index.html");
 ?>
 <!DOCTYPE html>
 <html>
