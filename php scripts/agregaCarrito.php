@@ -21,3 +21,5 @@ echo ("Los artículos del carrito son: ");
 for ($i = 1; $i < (sizeof($_SESSION['carrito']['id']) + 1); $i++) {
     echo ("<p>" . $_SESSION['carrito']['id'][$i] . ": " . $_SESSION['carrito']['cantidad'][$i] . "</p>");
 }
+
+echo ("Hay " . sizeof($_SESSION['carrito']['id']) . " datos en los arreglos.");
