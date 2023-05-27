@@ -9,12 +9,12 @@ $_SESSION['carrito']['id'] = [];
 $_SESSION['carrito']['cantidad'] = [];
 
 
-$_SESSION['carrito']['id'][(sizeof($_SESSION['carrito']['id'])) - 1] = $id;
-$_SESSION['carrito']['cantidad'][(sizeof($_SESSION['carrito']['cantidad'])) - 1] = $cantidad;
+$_SESSION['carrito']['id'][(sizeof($_SESSION['carrito']['id']))] = $id;
+$_SESSION['carrito']['cantidad'][(sizeof($_SESSION['carrito']['cantidad']))] = $cantidad;
 
 
 
 echo ("Los artículos del carrito son: ");
-for ($i = 1; $i < (sizeof($_SESSION['carrito']['id'])+1); $i++) {
+for ($i = 1; $i < (sizeof($_SESSION['carrito']['id']) + 1); $i++) {
     echo ("<p>" . $_SESSION['carrito']['id'][$i] . ": " . $_SESSION['carrito']['cantidad'][$i] . "</p>");
 }
