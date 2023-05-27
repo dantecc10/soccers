@@ -1,8 +1,10 @@
 <?php
 session_start();
-$_SESSION['carrito'];
-$_SESSION['carrito']['id'];
-$_SESSION['carrito']['cantidad'];
+if ((!isset($_SESSION['carrito']['id'])) && (!isset($_SESSION['carrito']['cantidad']))) {
+    $_SESSION['carrito'];
+    $_SESSION['carrito']['id'];
+    $_SESSION['carrito']['cantidad'];
+}
 
 $id = $_GET['id'];
 $cantidad = $_GET['cantidad'];
@@ -12,7 +14,6 @@ $cantidad = $_GET['cantidad'];
 
 $_SESSION['carrito']['id'][(sizeof($_SESSION['carrito']['id']))] = $id;
 $_SESSION['carrito']['cantidad'][(sizeof($_SESSION['carrito']['cantidad']))] = $cantidad;
-
 
 //array_values($_SESSION['carrito']['id']);
 //array_values($_SESSION['carrito']['cantidad']);
