@@ -7,10 +7,11 @@ $_SESSION['carrito']['cantidad'] = [];
 $id = $_GET['id'];
 $cantidad = $_GET['cantidad'];
 
+array_push($_SESSION['carrito']['id'], $id);
+array_push($_SESSION['carrito']['cantidad'], $cantidad);
 
-
-$_SESSION['carrito']['id'][(sizeof($_SESSION['carrito']['id']))] = $id;
-$_SESSION['carrito']['cantidad'][(sizeof($_SESSION['carrito']['cantidad']))] = $cantidad;
+//$_SESSION['carrito']['id'][(sizeof($_SESSION['carrito']['id']))] = $id;
+//$_SESSION['carrito']['cantidad'][(sizeof($_SESSION['carrito']['cantidad']))] = $cantidad;
 
 
 
