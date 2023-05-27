@@ -1,8 +1,8 @@
 <?php
 session_start();
 $_SESSION['carrito'];
-$_SESSION['carrito']['id'] = [];
-$_SESSION['carrito']['cantidad'] = [];
+$_SESSION['carrito']['id'];
+$_SESSION['carrito']['cantidad'];
 
 $id = $_GET['id'];
 $cantidad = $_GET['cantidad'];
