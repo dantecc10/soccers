@@ -18,7 +18,7 @@ $_SESSION['carrito']['cantidad'][(sizeof($_SESSION['carrito']['cantidad']))] = $
 //array_values($_SESSION['carrito']['cantidad']);
 
 echo ("Los artículos del carrito son: ");
-for ($i = 1; $i < (sizeof($_SESSION['carrito']['id']) + 1); $i++) {
+for ($i = 1; $i < (sizeof($_SESSION['carrito']['id'])); $i++) {
     echo ("<p>" . $_SESSION['carrito']['id'][$i] . ": " . $_SESSION['carrito']['cantidad'][$i] . "</p>");
 }
 
